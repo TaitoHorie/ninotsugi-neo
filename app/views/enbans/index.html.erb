@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02ba583ccf.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <div id="wrapper">
+    <header>
+      <div class="ninotop">
+        <p><img src="assets/nino2.png" alt="二の次"class="example1"></p>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li class=nav1><span>Party</span></li>
+          <li class=nav2><span>Mood</span></li>
+          <li class=nav3><span>Cat</span></li>
+          <li class=nav4><span>Cool</span></li>
+          <li class=nav5><span>Unique</span></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents clearfix">
+      <div class="left-content">
+        <div class="left-box">
+          <% @enbans.each do |enban| %>
+            <tr>
+              <td><%= image_tag enban.image.to_s, :size =>'200x200' %></td>
+            </tr>
+          <% end %>
+        </div>
+      </div>
+      <div class="right-content">
+        <div id="sidebtn" class="btntop4">
+        <strong>ようこそゲスト様</strong>
+          <ul>
+          <li class=btn_log>
+          <a class="icon fas fa-lock" href="#">Login</a></li>
+          <li class=btn_pos>
+          <a class="icon fas fa-edit" href="#">投稿</a></li>
+          <li class=btn_book>
+          <a class="icon fas fa-book-open" href="#">お気に入り</a></li>
+          <li class=btn_help>
+          <a class="icon fas fa-question-circle" href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </body>
+  <footer>
+  </footer>
+</html>

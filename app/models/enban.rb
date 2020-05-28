@@ -1,0 +1,3 @@
+class Enban < ApplicationRecord
+  
+end

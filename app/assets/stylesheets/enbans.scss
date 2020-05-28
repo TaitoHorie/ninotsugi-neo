@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  height: auto;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  
+  background: #fbf9f9;
+  font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック",Verdana;
+  header {
+    height: 100%;
+    width: 100%;
+    .ninotop {
+      height: 250px;
+      width: 100%;
+      background-image: url("sea.png");
+      background-size: cover; 
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align:center;
+        img.example1 {
+          width: 40%; 
+          height: auto;  
+          }    
+        }
+      }
+    .navbar {
+      width: 100%;
+      background-color: #ffffff;
+      margin: 0 auto;
+      height: 50px;
+      border-top: 1px solid #3e92ff;
+      border-bottom: 1px solid #3e92ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        height: 48px;
+        width: 700px;
+        }
+        li {
+          padding-top: 10px;
+          text-align: center;
+          span {
+            color: #3e92ff;
+            font-size: 17px;
+            font-weight: normal;
+            letter-spacing: 0.15em;
+            
+          }}
+    
+    }
+  }
+    .contents {
+      width: 100%;
+      background-color:rgb(175, 214, 230);
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .left-content {
+        height: 1000px;
+        width: 1030px;
+        background-color: #ffffff;
+        float: left;
+          .left-box {
+           
+          }
+          
+        }
+      }
+      .right-content {
+        height: 500px;
+        background-color: #f9f9f9;
+        float: left;
+        #sidebtn.btntop4{
+          margin-top: 20px;
+          width: 250px;
+          height: 500px;
+         strong {
+          margin-top: 30px;
+          font-weight: normal;
+          color:  #3e92ff;
+          letter-spacing: 0.1em;
+          padding: 0.6em 0 0.5em;
+          border-top: 1px dashed #3e92ff;
+          border-bottom: 1px dashed #3e92ff;
+          ul {
+            margin-top: 30px;
+          li {
+             margin-top: 30px;
+
+          }
+      }}
+      }
+    }
+    }
+    a {
+      text-decoration: none;
+      color: #3e92ff;
+    }
+
+
+  
+  
+
+  
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
