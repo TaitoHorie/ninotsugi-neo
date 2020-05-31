@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :enbans, only: [:index, :new, :create]
+  root to: 'enbans#index'
+  resources :enbans
 end

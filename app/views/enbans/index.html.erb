@@ -41,8 +41,22 @@
     <div class="contents clearfix">
       <div class="left-content">
         <div class="left-box">
+         <ul class="more_list">
           <% @enbans.each do |enban| %>
-              <p><%= image_tag enban.image.to_s, :size =>'200x200' %></p>
+              <%= image_tag enban.image.to_s, :size =>'200x200' %>
+              <%= image_tag 'arrow_top.png' %>
+          <li>
+            <%= link_to '詳細', "/enbans/#{enban.id}", method: :get %>
+          </li>
+          <% end %>
+        </div>
+         <ul class="more_list">
+          <% @enbans.each do |enban| %>
+              <%= image_tag enban.image.to_s, :size =>'200x200' %>
+              <%= image_tag 'arrow_top.png' %>
+          <li>
+            <%= link_to '詳細', "/enbans/#{enban.id}", method: :get %>
+          </li>
           <% end %>
         </div>
       </div>

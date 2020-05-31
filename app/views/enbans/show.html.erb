@@ -1,0 +1,18 @@
+<div class ="left-box">
+  <div class="content_post" style="background-image: url(<%= @enban.image %>);">
+    <div class="more">
+      <span><%= image_tag 'arrow_top.png' %></span>
+      <ul class="more_list">
+        <li>
+          <%= link_to '編集', "/enbans/#{@enban.id}/edit", method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', "/enbans/#{@enban.id}", method: :delete %>
+        </li>
+      </ul>
+    </div>
+    <%= simple_format(@enban.artist) %>
+    <span class="name"><%= @enban.name %>
+    </span>
+  </div>
+</div>
