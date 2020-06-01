@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="_mood.scss">
+    <script src="https://kit.fontawesome.com/02ba583ccf.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+  </head>
+  <body>
+    <header>
+      <div class="moodtop">
+      
+      </div>
+      <div class="navbar">
+        <ul>
+      
+          <a href="/cats/">Cat</a>
+          <a href="/partys/">Party</a>
+          <a href="/cools/">Cool</a>
+          <a href="/uniques/">Unique</a>
+          <a href="/enbans/">Home</a>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents clearfix">
+      <div class="left-contents">
+        <div class="left-box">
+         <ul class="more_list">
+          <% @enbans.each do |enban| %>
+              <%= image_tag enban.image.to_s, :size =>'200x200' %>
+              <%= image_tag 'arrow_top.png' %>
+          <li>
+            <%= link_to '詳細', "/enbans/#{enban.id}", method: :get %>
+          </li>
+          <% end %>
+      
+        </div>
+        </div>
+      </div>
+    </div>
+    </body>
+  <footer>
+  </footer>
+</html>

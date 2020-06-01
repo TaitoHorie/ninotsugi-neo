@@ -23,6 +23,7 @@ class EnbansController < ApplicationController
   def update
     enban = Enban.find(params[:id])
     enban.update(enban_params)
+    render layout: false
   end
 
   def show

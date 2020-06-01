@@ -44,12 +44,12 @@
         </ul>
       </div>
     </header>
-<div class=e-box>
+<div class="e-box">
   <div class ="left-box">
-    <div class="content_post" style="background-image: url(<%= @enban.image %>);">
     </div>
       <div class="more">
         <ul class="more_list">
+        <li><%= image_tag @enban.image.to_s, :size =>'400x400' %></li>
           <li>
             <%= link_to '編集', "/enbans/#{@enban.id}/edit", method: :get %>
           </li>

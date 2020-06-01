@@ -1,4 +1,8 @@
 class UniquesController < ApplicationController
-  def index
+    def index
+      @enbans = Enban.where(genre: 'ユニーク')
+  
+      render layout: false
+    end
   end
-end
+  
