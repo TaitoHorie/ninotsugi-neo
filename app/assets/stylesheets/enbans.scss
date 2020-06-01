@@ -73,20 +73,25 @@ body {
   }
     .contents {
       width: 100%;
-      background-color:rgb(175, 214, 230);
+      background-image: url(beach.jpg);
+      background-size: cover; 
       margin: 0 auto;
       display: flex;
       justify-content: center;
       .left-content {
-        height: 1000px;
-        width: 1030px;
+        height: 1500px;
+        width: 1002px;
         background-color: #ffffff;
         float: left;
+        border-left: 1px solid #3e92ff;
+        border-right: 1px solid #3e92ff;
+        border-bottom: 1px solid #3e92ff;
+
           .left-box {
            
            .more_list {
             display: flex;
-            overflow: scroll;
+            flex-wrap : wrap;
            }
           }
           

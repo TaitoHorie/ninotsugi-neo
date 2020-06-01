@@ -1,18 +1,61 @@
-<div class ="left-box">
-  <div class="content_post" style="background-image: url(<%= @enban.image %>);">
-    <div class="more">
-      <span><%= image_tag 'arrow_top.png' %></span>
-      <ul class="more_list">
-        <li>
-          <%= link_to '編集', "/enbans/#{@enban.id}/edit", method: :get %>
-        </li>
-        <li>
-          <%= link_to '削除', "/enbans/#{@enban.id}", method: :delete %>
-        </li>
-      </ul>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02ba583ccf.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+  </head>
+  <body>
+   <div id="wrapper">
+    <header>
+      <div class="ninotop">
+        <p><img src="assets/nino2.png" alt="二の次"class="example1"></p>
+      </div>
+      <div class="navbar">
+        <ul>
+          <a href="/moods/">Mood</a>
+          <a href="/cats/">Cat</a>
+          <a href="/partys/">Party</a>
+          <a href="/cools/">Cool</a>
+          <a href="/uniques/">Unique</a>
+          <a href="/enbans/">Home</a>
+        </ul>
+      </div>
+    </header>
+<div class=e-box>
+  <div class ="left-box">
+    <div class="content_post" style="background-image: url(<%= @enban.image %>);">
     </div>
-    <%= simple_format(@enban.artist) %>
-    <span class="name"><%= @enban.name %>
-    </span>
+      <div class="more">
+        <ul class="more_list">
+          <li>
+            <%= link_to '編集', "/enbans/#{@enban.id}/edit", method: :get %>
+          </li>
+          <li>
+            <%= link_to '削除', "/enbans/#{@enban.id}", method: :delete %>
+          </li>
+          <%= audio_tag 'sample.mp3' %>
+        </ul>
+      </div>
+      <%= simple_format(@enban.title) %>
+      <span class="name"><%= @enban.name %>
+      </span>
+    </div>
   </div>
 </div>

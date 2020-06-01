@@ -31,6 +31,6 @@ class EnbansController < ApplicationController
 
   private
   def enban_params
-    params.require(:enban).permit(:title, :artist, :name, :image)
+    params.require(:enban).permit(:title, :genre, :name, :image)
   end
 end

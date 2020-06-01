@@ -1,0 +1,67 @@
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  
+  background: #fbf9f9;
+  font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック",Verdana;
+  header {
+    height: 100%;
+    width: 100%;
+    .ninotop {
+      height: 250px;
+      width: 100%;
+      background-image: url("sea.png");
+      background-size: cover; 
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align:center;
+        img.example1 {
+          width: 40%; 
+          height: auto;  
+          }    
+        }
+      }
+    .navbar {
+      width: 100%;
+      background-color: #ffffff;
+      margin: 0 auto;
+      height: 50px;
+      border-top: 1px solid #3e92ff;
+      border-bottom: 1px solid #3e92ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+
+        justify-content: space-between;
+        height: 48px;
+        width: 700px;
+        }
+        li {
+          padding-top: 10px;
+          text-align: center;
+         
+    
+    }
+  }
+.e-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  .left-box {
+      width: 300px;
+    .content_post {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  }
+  }}

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  
+  background: #fbf9f9;
+  font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック",Verdana;
+  header {
+    width: 100%;
+    height: 300px;
+    .moodtop {
+      height: 250px;
+      width: 100%;
+      background-image: url("pool.png");
+      background-size: cover; 
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align:center;
+        img.example1 {
+          width: 40%; 
+          height: auto;  
+          }    
+        }
+      }
+    .navbar {
+      width: 100%;
+      background-color: #ffffff;
+      margin: 0 auto;
+      height: 50px;
+      border-top: 1px solid #3e92ff;
+      border-bottom: 1px solid #3e92ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        height: 48px;
+        width: 700px;
+        }
+        li {
+          padding-top: 10px;
+          text-align: center;
+          span {
+            color: #3e92ff;
+            font-size: 17px;
+            font-weight: normal;
+            letter-spacing: 0.15em;
+            
+          }}
+    
+    }
+  }
+    .contents {
+      width: 100%;
+      background-image: url(beach.jpg);
+      background-size: cover; 
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .left-contents {
+        height: 1000px;
+        width: 1030px;
+        background-color: #ffffff;
+        float: left;
+        border-left: 1px solid #3e92ff;
+        border-right: 1px solid #3e92ff;
+        border-bottom: 1px solid #3e92ff;
+
+          .left-box {
+           
+           .more_list {
+            display: flex;
+            flex-wrap : wrap;
+           }}}}}
+  
+.clearfix::after {
+  content: "";
+  // clear: both;
+  // display: block;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

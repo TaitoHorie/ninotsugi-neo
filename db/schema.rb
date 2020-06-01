@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_05_28_083608) do
 
   create_table "enbans", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
-    t.string "artist"
+    t.string "genre"
     t.string "name"
     t.text "image"
     t.datetime "created_at", null: false

@@ -1,0 +1,2 @@
+class UniquesController < ApplicationController
+end

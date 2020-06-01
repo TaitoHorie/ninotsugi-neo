@@ -20,6 +20,12 @@
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
+    <script src="assets/audiojs/audio.min.js"></script>
+ <script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
   </head>
   <body>
    <div id="wrapper">
@@ -29,11 +35,12 @@
       </div>
       <div class="navbar">
         <ul>
-          <li class=nav1><span>Party</span></li>
-          <li class=nav2><span>Mood</span></li>
-          <li class=nav3><span>Cat</span></li>
-          <li class=nav4><span>Cool</span></li>
-          <li class=nav5><span>Unique</span></li>
+          <a href="/moods/">Mood</a>
+          <a href="/cats/">Cat</a>
+          <a href="/partys/">Party</a>
+          <a href="/cools/">Cool</a>
+          <a href="/uniques/">Unique</a>
+          <audio src="/mp3/juicy.mp3" preload="auto" />
         </ul>
       </div>
     </header>
@@ -44,20 +51,8 @@
          <ul class="more_list">
           <% @enbans.each do |enban| %>
               <%= image_tag enban.image.to_s, :size =>'200x200' %>
-              <%= image_tag 'arrow_top.png' %>
-          <li>
-            <%= link_to '詳細', "/enbans/#{enban.id}", method: :get %>
-          </li>
           <% end %>
-        </div>
-         <ul class="more_list">
-          <% @enbans.each do |enban| %>
-              <%= image_tag enban.image.to_s, :size =>'200x200' %>
-              <%= image_tag 'arrow_top.png' %>
-          <li>
-            <%= link_to '詳細', "/enbans/#{enban.id}", method: :get %>
-          </li>
-          <% end %>
+      
         </div>
       </div>
       <div class="right-content">
